@@ -15,14 +15,8 @@
 
 @font-face {
     font-family: 'Cera Pro Bold';
-    src: url('./fonts/CeraPro-Bold.eot') format('.eot'), url('./fonts/CeraPro-Bold.ttf') format('.ttf'), url('./fonts/CeraPro-Bold.woff') format('.woff');
+    src: url('/fonts/CeraPro-Bold.eot') format('.eot'), url('/fonts/CeraPro-Bold.ttf') format('.ttf'), url('./fonts/CeraPro-Bold.woff') format('.woff');
     font-weight: 700px;
-}
-
-@font-face {
-    font-family: 'Hanged Letters';
-    src: url('./fonts/Hanged-Letters.ttf') format('.ttf');
-    font-weight: 400;
 }
 
 *{
@@ -75,9 +69,17 @@
 }
 
 .menu-list {
-    padding: 7px 0 0 12px;
+    padding: 7px 185px 377px 30px;
 }
 
+.icon-item {
+    color: #3D3D3D;
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+}
 .header {
     display: flex;
     align-items: center;
@@ -95,8 +97,7 @@ section.menu {
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
-    width: 310px;
-    height: 774px;
+   
 }
 
 h1 {
@@ -106,70 +107,46 @@ h1 {
     font-style: normal;
     font-weight: 700px;
     line-height: 16px;
+    padding: 14px 199px 0 18px;
 }
 
 .Plants {
     display: flex;
     flex-wrap: wrap; 
     width: 100%;
+    gap: 33px;
 }
 
 .flex-item {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: calc(33.33% - 22px);
+    max-width: 33,33%;
     justify-content: center;
     height: 350px;
     padding: 5px;
 }
 
-p {
-    padding: 12px 108px 6px 0;
+.normal-text {
     color: #3D3D3D;
-    font-family: 'Cera Pro Regular';
+    font-family: 'Cera Pro Regular',sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px; /* 100% */
+    padding: 12px 0 6px;
 }
 
 .font2 {
     color: #46A358;
-    font-family: 'Cera Pro Bold';
+    font-family: 'Cera Pro Bold', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 16px; /* 88.889% */
 }
 
-section.sale {
-    width: 310px;
-    background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
-}
-
-h2 {
-    font-family: 'Hanged Letters';  
-    color: #46A358;
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 65px; /* 100% */
-    text-align: center; 
-}
-
-h3 {
-    text-align: center;
-    color: #3D3D3D;
-    font-family: 'Cera Pro Bold', sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 69.565% */
-}
 .pagination {
-
-    right: 20px;
-    bottom: 20px;
     display: flex;
     gap: 10px;
     margin: 90px 105px 82px 1120px;
@@ -187,10 +164,8 @@ h3 {
     font-weight: 300;
     border-radius: 4px;
     border: none;
-    border-radius: 4px;
     border: 1px solid #E5E5E5;
     color: #3D3D3D;
- 
 }
 
 .active2 {
@@ -198,31 +173,3 @@ h3 {
     color:#FFF;
 }
 
-.wrapper {
-    width: 260px;
-    height: 300px;
-    position: relative;
-}
-
-.flex-item img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 0;
-}
-
-.picture {
-    position: relative;
-
-}
-
-.overlay {
-    position: absolute;
-    bottom: 82px;
-    right: 12px;
-}
-
-.background {
-    max-width: 100%;
-}
