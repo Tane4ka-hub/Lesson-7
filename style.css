@@ -66,6 +66,7 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 40px; 
+    
 }
 
 .menu-list {
@@ -79,7 +80,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px; /* 106.667% */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -117,14 +122,19 @@ h1 {
     gap: 33px;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
 .flex-item {
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - 22px);
-    max-width: 33,33%;
+    width: calc(33.33% - 33px);
     justify-content: center;
     height: 350px;
-    padding: 5px;
+    overflow: hidden;
 }
 
 .normal-text {
@@ -149,7 +159,8 @@ h1 {
 .pagination {
     display: flex;
     gap: 10px;
-    margin: 90px 105px 82px 1120px;
+    justify-content: flex-end;
+    padding: 90px 100px;
 }
 
 .page-btn {
@@ -173,3 +184,6 @@ h1 {
     color:#FFF;
 }
 
+.img:nth-of-type(3n) {
+    margin-right: 0;
+}
