@@ -126,17 +126,17 @@ h1 {
     display: flex;
     justify-content: center; 
     align-items: center;
-    
+    position: relative;
 }
 
 .flex-item {
     display: flex;
     flex-direction: column;
     width: calc(33.33% - 33px);
-    justify-content: center;
     height: 350px;
     overflow: hidden;
     position: relative;
+    border-top: 1px solid transparent;
 }
 
 .image {
@@ -195,28 +195,26 @@ h1 {
 
 .icon3 {
     position: absolute;
-    margin: 186px 63px 11px 54px;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     gap: 26px;
     opacity: 0;
 }
 
-.icon2 {
-    position: absolute;
-    margin-top: -310px;
-    opacity: 0;
-}
-
-.flex-item:hover > div {
+.flex-item:hover .icon3 {
     opacity: 1;
+}
+.flex-item:hover {
+    border-color: #46A358;
 }
 
 .discount {
     background: #46A358;
     position: absolute;
     padding: 6px 8px;
-    margin: 0 110px 257px 0;
+    left: 0;
+    top: 14px;
     color: #FFF;
     font-family: 'Cera Pro Medium', sans-serif;
     font-size: 16px;
@@ -235,11 +233,11 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 16px; /* 88.889% */
-    margin: 294px 50px 10px 75px;
+    margin: 283px 50px 10px 75px;
     text-decoration: line-through;
     opacity: 0;
 }
-.flex-item:hover > button {
+.flex-item:hover .discount {
     opacity: 1;
 }
 
